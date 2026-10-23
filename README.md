@@ -1,124 +1,92 @@
-\# BashBank
+# BashBank
 
+**A C++ command-line banking simulator built to practise object-oriented programming, file handling, and core programming fundamentals.**
 
+BashBank lets users create accounts, authenticate with a PIN, view account details, and perform basic deposit and withdrawal operations through a terminal interface.
 
-A C++ command-line banking simulator that lets users create accounts, authenticate using a PIN, check account details, deposit money, and withdraw funds.
+> **Project status:** Learning project — under development.
 
+## Features
 
+- **Account management** — Create an account with a name, date of birth, and six-digit PIN.
+- **PIN authentication** — Log in using an account number and PIN.
+- **Balance inquiry** — View account details and the current balance.
+- **Transactions** — Deposit and withdraw funds.
+- **Local persistence** — Store account records in text files between program runs.
 
-\## Features
+## Built With
 
+![C++](https://img.shields.io/badge/C%2B%2B-Programming%20Language-blue)
+![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
+![Status](https://img.shields.io/badge/Status-Learning%20Project-orange)
 
+- **Language:** C++
+- **Standard libraries:** `iostream`, `fstream`, `string`, `cctype`
+- **Concepts:** Classes, encapsulation, functions, loops, conditionals, file I/O
+- **Version control:** Git and GitHub
 
-\- \*\*Account Creation\*\* — Register an account with a name, date of birth, and six-digit PIN.
+## Getting Started
 
-\- \*\*PIN Authentication\*\* — Log in using an account number and PIN.
+### Requirements
 
-\- \*\*Account Details\*\* — View account information and current balance.
+- A C++ compiler, such as GCC through MinGW-w64
+- A terminal such as Git Bash or Windows Terminal
 
-\- \*\*Deposits and Withdrawals\*\* — Perform basic banking transactions.
-
-\- \*\*File-Based Persistence\*\* — Store account information locally in text files.
-
-
-
-\## Tech Stack
-
-
-
-\- \*\*Language:\*\* C++
-
-\- \*\*Libraries:\*\* iostream, fstream, string, cctype
-
-\- \*\*Concepts:\*\* Classes and objects, encapsulation, file handling, functions, conditional statements, and loops.
-
-\- \*\*Tools:\*\* Git and GitHub
-
-
-
-\## Getting Started
-
-
-
-\### Prerequisites
-
-
-
-\- A C++ compiler such as GCC (MinGW-w64 on Windows).
-
-\- Git (optional, for cloning the repository).
-
-
-
-\### Compile
-
-
-
-Open a terminal in the project directory and run:
-
-
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/seepatimeghashyam/BashBank.git
+cd BashBank
+```
 
+### 2. Compile
+
+```bash
 g++ BashBank.cpp -o BashBank
-
 ```
 
+### 3. Run
 
-
-\### Run on Windows
-
-
+**Windows — Git Bash**
 
 ```bash
-
-.\\BashBank.exe
-
+./BashBank.exe
 ```
 
-
-
-\### Run on Linux
-
-
+**Linux**
 
 ```bash
-
 ./BashBank
-
 ```
 
+## How It Works
 
+1. Choose whether to create an account, log in, or exit.
+2. New accounts receive an account number and save their details locally.
+3. Existing users enter their account number and PIN.
+4. After authentication, users can view their details, deposit money, or withdraw money.
+5. Account information is written to local text files.
 
-\## Current Limitations
+## Current Limitations
 
+BashBank is a learning project, **not a real banking application**.
 
+- Account data and PINs are stored in plain text.
+- Input validation and transaction edge cases need improvement.
+- The application does not use a database or production-grade security.
+- Automated tests have not yet been added.
 
-BashBank is a learning project, not a real banking application. It currently uses local text files for account storage and does not implement production-grade security or data protection.
+**Do not use real personal or financial information with this program.**
 
+## Roadmap
 
+- [ ] Improve input validation and error handling
+- [ ] Prevent invalid or negative transaction amounts
+- [ ] Fix withdrawal boundary cases
+- [ ] Improve account data security
+- [ ] Refactor and document the code
+- [ ] Add tests for account creation and transactions
 
-\## Planned Improvements
+## What I'm Learning
 
-
-
-\- Improve input validation and error handling.
-
-\- Strengthen PIN handling and account data security.
-
-\- Fix transaction edge cases.
-
-\- Refactor the code and improve maintainability.
-
-\- Add testing and improve account management.
-
-
-
-\## Purpose
-
-
-
-This project is an opportunity to strengthen my C++ fundamentals by understanding and improving a command-line application, particularly classes, file handling, input validation, and version control.
-
-
-
+This project is helping me strengthen my understanding of C++, object-oriented programming, file handling, debugging, and version control. I'll document improvements as I implement and test them.
